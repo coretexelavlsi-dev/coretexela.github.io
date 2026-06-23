@@ -4,7 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CORETEXELA | Ignite Innovation for Future</title>
+<title>CORETEXELA | Engineering the Future of Semiconductors</title>
+
+<meta name="description" content="CORETEXELA is a semiconductor engineering company focused on VLSI Design, ASIC Design, RTL Design, FPGA Development, Research and Innovation.">
+<meta name="keywords" content="CORETEXELA,VLSI,ASIC Design,RTL Design,FPGA,Semiconductor">
+<meta name="author" content="CORETEXELA">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -12,96 +19,265 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+:root{
+--navy:#081A35;
+--gold:#D4AF37;
+--white:#ffffff;
+--text:#2b2b2b;
+--light:#f8f9fc;
 }
 
 body{
-background:#ffffff;
-color:#222;
+background:var(--white);
+color:var(--text);
+line-height:1.7;
 }
 
 nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(8,26,53,.95);
+backdrop-filter:blur(10px);
+z-index:999;
+padding:18px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 8%;
-background:#0A1931;
-color:white;
 }
 
-nav h2{
-color:#D4AF37;
+.logo-text{
+color:var(--gold);
+font-weight:800;
+font-size:1.5rem;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:var(--gold);
 }
 
 .hero{
+min-height:100vh;
+background:linear-gradient(135deg,#081A35,#0F274D);
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-padding:100px 10%;
-background:#0A1931;
+padding:120px 10%;
 color:white;
 }
 
-.hero img{
-width:180px;
-margin-bottom:25px;
+.hero-content img{
+width:220px;
+margin-bottom:30px;
 }
 
 .hero h1{
-font-size:52px;
-margin-bottom:20px;
+font-size:4rem;
+font-weight:800;
+line-height:1.1;
+margin-bottom:25px;
 }
 
 .hero p{
-font-size:20px;
-max-width:800px;
+max-width:900px;
 margin:auto;
-line-height:1.6;
+font-size:1.2rem;
+opacity:.9;
+}
+
+.hero-buttons{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
 }
 
 .btn{
-display:inline-block;
-margin-top:30px;
-padding:14px 30px;
-background:#D4AF37;
-color:#0A1931;
+padding:15px 30px;
+border-radius:10px;
 text-decoration:none;
-font-weight:bold;
-border-radius:8px;
+font-weight:600;
+transition:.3s;
 }
 
-.section{
-padding:80px 10%;
+.btn-primary{
+background:var(--gold);
+color:var(--navy);
 }
 
-.section h2{
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-secondary{
+border:2px solid white;
+color:white;
+}
+
+.btn-secondary:hover{
+background:white;
+color:var(--navy);
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
 text-align:center;
-margin-bottom:40px;
-font-size:36px;
-color:#0A1931;
+margin-bottom:60px;
 }
 
-.cards{
+.section-title h2{
+font-size:2.7rem;
+color:var(--navy);
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#666;
+}
+
+.about{
+background:var(--light);
+}
+
+.about-box{
+max-width:1100px;
+margin:auto;
+text-align:center;
+font-size:1.1rem;
+}
+
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
-padding:25px;
 background:white;
-border-radius:12px;
-box-shadow:0 0 15px rgba(0,0,0,0.08);
+padding:35px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
 }
 
 .card h3{
-margin-bottom:10px;
-color:#0A1931;
+color:var(--navy);
+margin-bottom:15px;
+}
+
+.why{
+background:var(--light);
+}
+
+.why-list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.why-item{
+background:white;
+padding:25px;
+border-left:5px solid var(--gold);
+border-radius:10px;
+font-weight:600;
+}
+
+.project-card{
+max-width:1000px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.project-card ul{
+margin-top:20px;
+padding-left:20px;
+}
+
+.community{
+background:linear-gradient(135deg,#081A35,#102B56);
+color:white;
+text-align:center;
+}
+
+.community h2{
+font-size:2.8rem;
+margin-bottom:20px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.contact-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+text-align:center;
 }
 
 footer{
-background:#0A1931;
+background:#061225;
 color:white;
 text-align:center;
-padding:30px;
+padding:40px;
+}
+
+footer h3{
+color:var(--gold);
+margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+nav ul{
+display:none;
+}
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.hero-content img{
+width:160px;
+}
+
+.section-title h2{
+font-size:2rem;
+}
+
 }
 
 </style>
@@ -110,10 +286,21 @@ padding:30px;
 <body>
 
 <nav>
-<h2>CORETEXELA</h2>
+<div class="logo-text">CORETEXELA</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#why">Why Us</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
 <section class="hero">
+
+<div class="hero-content">
 
 <img src="logo.png" alt="CORETEXELA Logo">
 
@@ -121,54 +308,151 @@ padding:30px;
 
 <p>
 Empowering Future Semiconductor Engineers Through
-Research, Innovation and Industry-Oriented Learning.
+Research, Innovation, Industry-Oriented Learning and
+Advanced Engineering Excellence.
 </p>
 
-<a href="#" class="btn">Explore Services</a>
+<div class="hero-buttons">
+
+<a href="#services" class="btn btn-primary">Explore Services</a>
+
+<a href="#community" class="btn btn-secondary">Join Community</a>
+
+</div>
+
+</div>
 
 </section>
 
-<section class="section">
+<section id="about" class="about">
 
+<div class="section-title">
+<h2>About CORETEXELA</h2>
+<p>Ignite Innovation for Future</p>
+</div>
+
+<div class="about-box">
+
+CORETEXELA is a semiconductor-focused engineering company dedicated to bridging the gap between academic learning and industry requirements. We focus on VLSI Design, ASIC Design, RTL Development, FPGA Engineering, Research, Innovation and practical engineering education.
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="section-title">
 <h2>Our Domains</h2>
+<p>Building the next generation of semiconductor talent</p>
+</div>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
 <h3>VLSI Design</h3>
-<p>Industry-oriented semiconductor learning.</p>
+<p>Industry-oriented semiconductor learning and development.</p>
 </div>
 
 <div class="card">
 <h3>ASIC Design</h3>
-<p>Complete ASIC design flow understanding.</p>
+<p>Complete front-end to back-end ASIC design flow understanding.</p>
 </div>
 
 <div class="card">
 <h3>RTL Design</h3>
-<p>Verilog and SystemVerilog development.</p>
+<p>Verilog, SystemVerilog and digital design implementation.</p>
 </div>
 
 <div class="card">
 <h3>FPGA Development</h3>
-<p>Hands-on digital design implementation.</p>
+<p>Hands-on hardware acceleration and digital prototyping.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="section">
+<section id="why" class="why">
 
-<h2>Featured Project</h2>
+<div class="section-title">
+<h2>Why Choose CORETEXELA</h2>
+</div>
 
-<div class="card">
+<div class="why-list">
+
+<div class="why-item">✓ Industry-Oriented Learning</div>
+<div class="why-item">✓ Practical Engineering Approach</div>
+<div class="why-item">✓ Research Driven Innovation</div>
+<div class="why-item">✓ Semiconductor Focus</div>
+<div class="why-item">✓ Community First Vision</div>
+<div class="why-item">✓ Future Technology Mindset</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<div class="section-title">
+<h2>Featured Engineering Project</h2>
+</div>
+
+<div class="project-card">
 
 <h3>Optimized 2D FIR Filter Architecture Using P4 McClellan Transformation and CSD-CSE</h3>
 
 <p>
-Advanced VLSI architecture focused on area, delay and hardware optimization.
+Advanced VLSI architecture focused on hardware optimization, reduced complexity and efficient digital signal processing implementation.
 </p>
+
+<ul>
+<li>Verilog HDL Implementation</li>
+<li>Cadence Synthesis Flow</li>
+<li>MATLAB Validation</li>
+<li>Area Optimized Architecture</li>
+<li>Image Processing Applications</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="community" class="community">
+
+<h2>Join The CORETEXELA Community</h2>
+
+<p>
+Learn. Build. Innovate. Grow.
+</p>
+
+<br>
+
+<a href="#contact" class="btn btn-primary">Connect With Us</a>
+
+</section>
+
+<section id="contact">
+
+<div class="section-title">
+<h2>Contact</h2>
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+<h3>GitHub</h3>
+<p>CORETEXELA Official Repository</p>
+</div>
+
+<div class="contact-card">
+<h3>LinkedIn</h3>
+<p>Professional Engineering Network</p>
+</div>
+
+<div class="contact-card">
+<h3>Community</h3>
+<p>Future Semiconductor Engineers</p>
+</div>
 
 </div>
 
@@ -176,9 +460,13 @@ Advanced VLSI architecture focused on area, delay and hardware optimization.
 
 <footer>
 
-<p>CORETEXELA</p>
+<h3>CORETEXELA</h3>
 
 <p>Ignite Innovation for Future</p>
+
+<p style="margin-top:10px;">
+© 2026 CORETEXELA. All Rights Reserved.
+</p>
 
 </footer>
 
