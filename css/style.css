@@ -474,3 +474,25 @@ color:var(--gold);
 margin-bottom:12px;
 
 }
+.vision-banner{
+
+background:#0B0B0B;
+color:white;
+
+text-align:center;
+
+padding:140px 0;
+
+}
+
+.vision-banner h2{
+
+font-size:clamp(2.5rem,6vw,5rem);
+
+line-height:1.2;
+
+max-width:900px;
+
+margin:auto;
+
+}
