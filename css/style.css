@@ -112,15 +112,24 @@ p{
 /* ========================= */
 
 .navbar{
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:1000;
 
-    background:rgba(255,255,255,.95);
-    backdrop-filter:blur(12px);
+position:fixed;
 
-    border-bottom:1px solid #eee;
+top:0;
+
+width:100%;
+
+z-index:1000;
+
+background:
+rgba(255,255,255,.85);
+
+backdrop-filter:
+blur(18px);
+
+border-bottom:
+1px solid rgba(212,175,55,.15);
+
 }
 
 .nav-container{
@@ -158,6 +167,31 @@ p{
 
 .nav-links a:hover{
     color:var(--gold-dark);
+}
+
+.nav-cta{
+
+background:var(--gold);
+
+color:var(--black) !important;
+
+padding:12px 20px;
+
+border-radius:12px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.nav-cta:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 10px 25px rgba(212,175,55,.3);
+
 }
 
 /* ========================= */
