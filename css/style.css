@@ -496,3 +496,59 @@ max-width:900px;
 margin:auto;
 
 }
+
+.footer{
+
+background:#0B0B0B;
+
+color:white;
+
+padding:80px 0;
+
+text-align:center;
+
+}
+
+.footer h3{
+
+color:var(--gold);
+
+margin-bottom:10px;
+
+}
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+margin:30px 0;
+
+flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+color:white;
+
+text-decoration:none;
+
+}
+
+.footer-links a:hover{
+
+color:var(--gold);
+
+}
+
+.copyright{
+
+color:#999;
+
+margin-top:20px;
+
+}
