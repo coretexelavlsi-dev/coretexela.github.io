@@ -124,6 +124,9 @@ p{
     display:flex;
     align-items:center;
     gap:12px;
+    text-decoration:none;
+    color:inherit;
+
 }
 
 .logo img{
@@ -132,11 +135,6 @@ p{
 
 .logo span{
     font-weight:700;
-}
-
-.logo{
-text-decoration:none;
-color:inherit;
 }
 
 .nav-links{
