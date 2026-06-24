@@ -134,6 +134,11 @@ p{
     font-weight:700;
 }
 
+.logo{
+text-decoration:none;
+color:inherit;
+}
+
 .nav-links{
 
 display:flex;
