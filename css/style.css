@@ -155,8 +155,16 @@ border-bottom:
 }
 
 .nav-links{
-    display:flex;
-    gap:24px;
+
+display:flex;
+align-items:center;
+gap:24px;
+flex-wrap:nowrap;
+
+}
+
+.nav-links a{
+white-space:nowrap;
 }
 
 .nav-links a{
@@ -647,24 +655,6 @@ font-size:15px;
 
 .footer{
 padding:60px 0;
-}
-
-}
-
-@media(max-width:768px){
-
-.nav-links{
-
-gap:10px;
-
-font-size:13px;
-
-}
-
-.nav-cta{
-
-display:none;
-
 }
 
 }
