@@ -272,89 +272,40 @@ line-height:1.8;
 
 .hero-visual{
 position:relative;
+height:500px;
 display:flex;
 justify-content:center;
 align-items:center;
-height:550px;
 }
 
 .core{
-
-width:270px;
-height:270px;
-
-position:relative;
+width:220px;
+height:220px;
 
 border:3px solid var(--gold);
 
 border-radius:28px;
 
-background:
-linear-gradient(
-135deg,
-rgba(212,175,55,.12),
-rgba(255,255,255,.95)
-);
-
 box-shadow:
-0 0 30px rgba(212,175,55,.25),
-0 0 80px rgba(212,175,55,.12),
-inset 0 0 25px rgba(212,175,55,.08);
-
-}
-
-.core::before{
-
-content:"";
-
-position:absolute;
-
-top:-18px;
-bottom:-18px;
-left:-18px;
-right:-18px;
-
-border:1px solid rgba(212,175,55,.25);
-
-border-radius:36px;
-
-}
-
-.core::after{
-
-content:"";
-
-position:absolute;
-top:50%;
-left:50%
-width:70px;
-height:70px;
-transform:
-translate(-50%,-50%);
-
-background:
-rgba(212,175,55,.15);
-
-border-radius:16px;
-
+0 0 40px rgba(212,175,55,.35);
 }
 
 .ring{
 position:absolute;
+
 border-radius:50%;
-border:1px solid rgba(212,175,55,.18);
-animation:
-pulse 8s linear infinite;
+
+border:1px solid rgba(212,175,55,.4);
 }
 
 .ring1{
-width:420px;
-height:420px;
+width:320px;
+height:320px;
 }
 
 .ring2{
-width:560px;
-height:560px;
+width:450px;
+height:450px;
 }
 /* ========================= */
 /* SECTIONS */
@@ -770,183 +721,5 @@ align-items:center;
 height:650px;
 
 position:relative;
-
-}
-
-.chip-network{
-
-position:relative;
-
-width:550px;
-height:550px;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-}
-
-.network-ring{
-
-position:absolute;
-
-border-radius:50%;
-
-border:1px solid rgba(212,175,55,.18);
-
-}
-
-.ring-inner{
-
-width:360px;
-height:360px;
-
-}
-
-.ring-outer{
-
-width:520px;
-height:520px;
-
-}
-
-.chip-core{
-
-width:260px;
-height:260px;
-
-background:#fff;
-
-border:3px solid var(--gold);
-
-border-radius:30px;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-box-shadow:
-0 0 30px rgba(212,175,55,.20),
-0 0 80px rgba(212,175,55,.08);
-
-position:relative;
-
-}
-
-/* Circuit Extensions */
-
-.chip-core::before{
-
-content:"";
-
-position:absolute;
-
-width:420px;
-height:2px;
-
-background:
-linear-gradient(
-90deg,
-transparent,
-rgba(212,175,55,.45),
-transparent
-);
-
-}
-
-.chip-core::after{
-
-content:"";
-
-position:absolute;
-
-width:2px;
-height:420px;
-
-background:
-linear-gradient(
-180deg,
-transparent,
-rgba(212,175,55,.45),
-transparent
-);
-
-}
-
-/* Center Label */
-
-.chip-label{
-
-font-size:28px;
-
-font-weight:700;
-
-color:var(--gold-dark);
-
-letter-spacing:3px;
-
-}
-
-/* Nodes */
-
-.tech-node{
-
-position:absolute;
-
-width:90px;
-height:90px;
-
-border-radius:50%;
-
-background:#fff;
-
-border:2px solid var(--gold);
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-font-weight:700;
-
-color:var(--gold-dark);
-
-box-shadow:
-0 10px 30px rgba(212,175,55,.15);
-
-}
-
-.node-top{
-
-top:40px;
-left:50%;
-
-transform:translateX(-50%);
-
-}
-
-.node-right{
-
-right:40px;
-top:50%;
-
-transform:translateY(-50%);
-
-}
-
-.node-bottom{
-
-bottom:40px;
-left:50%;
-
-transform:translateX(-50%);
-
-}
-
-.node-left{
-
-left:40px;
-top:50%;
-
-transform:translateY(-50%);
 
 }
