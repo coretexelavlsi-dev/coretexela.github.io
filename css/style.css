@@ -57,13 +57,12 @@ h1,h2,h3,h4{
 }
 
 h1{
-font-size:clamp(3.2rem,5vw,4.8rem);
+font-size:5.5rem;
 line-height:1.05;
 }
 
 h2{
-    font-size:clamp(2rem,4vw,3.5rem);
-    margin-bottom:20px;
+font-size:3rem;
 }
 
 h3{
@@ -414,47 +413,6 @@ section{
 }
 
 /* ========================= */
-/* RESPONSIVE */
-/* ========================= */
-
-@media(max-width:900px){
-
-    .hero-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero{
-        text-align:center;
-    }
-
-    .hero-buttons{
-        justify-content:center;
-    }
-
-    .nav-links{
-        display:none;
-    }
-
-    .hero-visual{
-        height:350px;
-    }
-
-    .ring1{
-        width:420px;
-        height:420px;
-    }
-
-    .ring2{
-        width:560px;
-        height:560px;
-    }
-
-    .core{
-        width:170px;
-        height:170px;
-    }
-}
-/* ========================= */
 /* RESEARCH SECTION */
 /* ========================= */
 
@@ -644,32 +602,3 @@ min-height:150px;
 
 }
 
-@media(max-width:768px){
-
-section{
-padding:70px 0;
-}
-
-h2{
-font-size:2rem;
-}
-
-.card{
-padding:22px;
-}
-
-.hero{
-min-height:auto;
-padding-top:120px;
-padding-bottom:80px;
-}
-
-.hero p{
-font-size:15px;
-}
-
-.footer{
-padding:60px 0;
-}
-
-}
