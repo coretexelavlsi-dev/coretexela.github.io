@@ -650,3 +650,21 @@ padding:60px 0;
 }
 
 }
+
+@media(max-width:768px){
+
+.nav-links{
+
+gap:10px;
+
+font-size:13px;
+
+}
+
+.nav-cta{
+
+display:none;
+
+}
+
+}
