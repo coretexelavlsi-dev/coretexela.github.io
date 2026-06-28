@@ -685,21 +685,19 @@ min-height:150px;
 
     justify-content:center;
 
-    align-items:center;
+    align-items:center;      
+    overflow:hidden;
 
 }
 
 .hero-chip{
 
-    width:100%;
+    width:80%;
 
-    max-width:520px;
+    max-width:420px;
 
     height:auto;
 
     object-fit:contain;
-
-    filter:drop-shadow(0 25px 45px rgba(0,0,0,.15));
-
-    transition:.5s ease;
 }
+
