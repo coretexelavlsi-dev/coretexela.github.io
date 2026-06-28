@@ -625,96 +625,34 @@ min-height:150px;
     box-shadow:0 12px 28px rgba(109,40,217,.35);
 }
 
-/*====================================
- HERO SEMICONDUCTOR SYSTEM
-====================================*/
+/* ==========================================
+   HERO ILLUSTRATION CONTAINER
+========================================== */
 
 .hero-image{
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
+
+    min-height:520px;
+
     position:relative;
 }
 
-.chip-container{
+#hero-illustration{
+
+    width:460px;
+
+    height:460px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
     position:relative;
-    width:360px;
-    height:360px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.chip-glow{
-
-    position:absolute;
-
-    width:320px;
-    height:320px;
-
-    border-radius:50%;
-
-    background:
-    radial-gradient(circle,
-    rgba(124,58,237,.25),
-    transparent 70%);
-
-    filter:blur(20px);
-
-    animation:glowPulse 4s ease-in-out infinite;
-}
-
-.chip-core{
-
-    width:180px;
-    height:180px;
-
-    background:white;
-
-    border:3px solid #D4AF37;
-
-    border-radius:24px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    box-shadow:
-
-    0 20px 60px rgba(0,0,0,.12),
-
-    0 0 40px rgba(124,58,237,.20);
-
-}
-
-.chip-logo{
-
-    font-size:70px;
-
-    font-weight:800;
-
-    color:#D4AF37;
-}
-
-@keyframes glowPulse{
-
-0%,100%{
-
-transform:scale(1);
-
-opacity:.8;
-
-}
-
-50%{
-
-transform:scale(1.08);
-
-opacity:1;
-
-}
-
 }
