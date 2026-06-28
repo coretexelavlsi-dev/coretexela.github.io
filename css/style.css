@@ -656,3 +656,50 @@ min-height:150px;
 
     position:relative;
 }
+
+/*====================================
+ HERO IMAGE
+====================================*/
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:560px;
+
+    position:relative;
+
+}
+
+.hero-visual{
+
+    position:relative;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-chip{
+
+    width:100%;
+
+    max-width:520px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    filter:drop-shadow(0 25px 45px rgba(0,0,0,.15));
+
+    transition:.5s ease;
+}
