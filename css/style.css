@@ -217,10 +217,21 @@ border-radius:10px;
 }
 
 .hero-grid{
+
     display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:60px;
+    grid-template-columns:58% 42%;
     align-items:center;
+    gap:40px;
+
+}
+.hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
 }
 
 .badge{
