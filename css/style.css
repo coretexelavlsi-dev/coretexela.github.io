@@ -333,3 +333,70 @@ footer {
   border-left: 4px solid #D4AF37;
   background: #f8fafc;
 }
+
+/* =========================
+   CORETEXELA FINAL UI SYSTEM
+========================= */
+
+/* SPACING SYSTEM */
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+}
+
+/* UNIFIED CARD SYSTEM */
+.card,
+.problem-box,
+.code-block,
+.output-panel,
+.recommendation-box {
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* BUTTON SYSTEM */
+button {
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* PRIMARY BUTTON */
+.primary {
+  background: #D4AF37;
+  color: #0B1B3A;
+}
+
+/* SECONDARY BUTTON */
+.secondary {
+  background: transparent;
+  border: 1px solid #D4AF37;
+  color: #D4AF37;
+}
+
+/* TEXT CONSISTENCY */
+h1, h2, h3 {
+  letter-spacing: -0.5px;
+}
+
+p {
+  line-height: 1.6;
+  color: #64748B;
+}
+
+/* PAGE BACKGROUND CONSISTENCY */
+.learn-container,
+.practice-container {
+  background: #F5F7FB;
+}
