@@ -1,0 +1,17 @@
+[
+  {
+    "title": "2:1 MUX",
+    "desc": "Design a multiplexer: y = a when sel=0 else y = b",
+    "expected": "assign y = sel"
+  },
+  {
+    "title": "AND Gate",
+    "desc": "Implement AND gate using Verilog",
+    "expected": "assign y = a & b"
+  },
+  {
+    "title": "OR Gate",
+    "desc": "Implement OR gate",
+    "expected": "assign y = a | b"
+  }
+]
