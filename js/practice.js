@@ -1,51 +1,58 @@
-const problems = [
-  {
-    title: "2:1 Multiplexer",
-    desc: "Output y = a when sel = 0 else y = b",
-    expected: "assign y = sel"
-  },
-  {
-    title: "AND Gate",
-    desc: "Design AND gate",
-    expected: "assign y = a & b"
-  }
-];
+let problems = [];
+let currentIndex = 0;
 
-let current = 0;
+// LOAD PROBLEMS
+fetch("data/problems.json")
+  .then(res => res.json())
+  .then(data => {
+    problems = data;
+    renderProblems();
+  });
 
-// LOAD DEFAULT PROBLEM
-function loadProblem() {
-  document.getElementById("problemTitle").innerText = problems[current].title;
-  document.getElementById("problemDesc").innerText = problems[current].desc;
+// RENDER LIST
+function renderProblems() {
+  const list = document.getElementById("problemList");
+
+  problems.forEach((p, i) => {
+    let li = document.createElement("li");
+    li.innerText = p.title;
+
+    li.onclick = () => loadProblem(i);
+
+    list.appendChild(li);
+  });
 }
 
-loadProblem();
+// LOAD PROBLEM
+function loadProblem(index) {
+  currentIndex = index;
 
-// RUN CODE (simple simulation placeholder)
+  document.getElementById("problemTitle").innerText =
+    problems[index].title;
+
+  document.getElementById("problemDesc").innerText =
+    problems[index].desc;
+
+  document.getElementById("hintText").innerText =
+    "Think step by step like an RTL engineer.";
+}
+
+// RUN (simulation placeholder)
 function runCode() {
-  document.getElementById("result").innerText =
-    "Simulation Running... (MVP Mode)";
+  document.getElementById("outputBox").innerText =
+    "Running simulation... (MVP mode)";
 }
 
-// SUBMIT CODE (basic string check logic)
+// SUBMIT (basic validation engine)
 function submitCode() {
   let code = document.getElementById("codeArea").value;
-
-  let expected = problems[current].expected;
+  let expected = problems[currentIndex].expected;
 
   if (code.includes(expected)) {
-    document.getElementById("result").innerText =
-      "Correct ✔ Great Engineering Logic!";
+    document.getElementById("outputBox").innerText =
+      "Correct ✔ RTL logic verified";
   } else {
-    document.getElementById("result").innerText =
-      "Incorrect ❌ Try Again";
-  }
-}
-
-// NEXT PROBLEM (future upgrade hook)
-function nextProblem() {
-  if (current < problems.length - 1) {
-    current++;
-    loadProblem();
+    document.getElementById("outputBox").innerText =
+      "Incorrect ❌ Review logic and retry";
   }
 }
