@@ -141,6 +141,11 @@ button.secondary {
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+.topics li.active {
+  background: #D4AF37;
+  color: #0B1B3A;
+}
+
 .content {
   width: 75%;
   padding: 40px;
@@ -314,6 +319,13 @@ footer {
   border-radius: 10px;
   border: 1px solid #ddd;
   background: white;
+}
+
+.code-editor {
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #e5e7eb;
 }
 
 /* BUTTONS */
