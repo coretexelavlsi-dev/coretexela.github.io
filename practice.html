@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CORETEXELA - Practice</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">CORETEXELA</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="learn.html">Learn</a>
+    <a href="project.html">Projects</a>
+  </nav>
+</header>
+
+<!-- PRACTICE CONTAINER -->
+<section class="practice-container">
+
+  <!-- PROBLEM -->
+  <div class="problem-box">
+    <h2 id="problemTitle">2:1 Multiplexer</h2>
+
+    <p id="problemDesc">
+      Design a 2:1 multiplexer in Verilog.
+      Output y = a when sel = 0, else y = b.
+    </p>
+  </div>
+
+  <!-- CODE EDITOR -->
+  <div class="editor-box">
+    <textarea id="codeArea">
+module mux(input a,b,sel, output y);
+
+endmodule
+    </textarea>
+
+    <button onclick="runCode()">Run</button>
+    <button onclick="submitCode()">Submit</button>
+  </div>
+
+  <!-- OUTPUT -->
+  <div class="output-box">
+    <h3>Result</h3>
+    <p id="result">Not executed yet</p>
+  </div>
+
+</section>
+
+<script src="js/practice.js"></script>
+
+</body>
+</html>
