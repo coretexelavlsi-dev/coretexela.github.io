@@ -1,4 +1,8 @@
-/* GLOBAL RESET */
+/* =========================
+   CORETEXELA V2 DESIGN SYSTEM
+   PREMIUM SEMICONDUCTOR UI
+========================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,185 +10,136 @@
   font-family: 'Inter', sans-serif;
 }
 
-/* BODY */
 body {
   background: #0B1B3A;
-  color: white;
+  color: #0F172A;
 }
 
 /* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
-  background: rgba(0,0,0,0.2);
+  padding: 18px 50px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .logo {
   font-weight: 700;
   font-size: 20px;
+  color: #FFFFFF;
 }
 
 nav a {
-  color: white;
   margin-left: 20px;
   text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-/* HERO */
+nav a:hover {
+  color: #D4AF37;
+}
+
+/* HERO SECTION */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
+  color: white;
 }
 
 .hero h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .hero p {
+  margin-top: 15px;
   font-size: 18px;
-  opacity: 0.8;
+  color: #cbd5e1;
 }
 
 /* BUTTONS */
-.cta {
-  margin-top: 30px;
+button {
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-button {
-  padding: 12px 20px;
-  border: none;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 6px;
-  background: #00A3FF;
-  color: white;
+button.primary {
+  background: #D4AF37;
+  color: #0B1B3A;
 }
 
 button.secondary {
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
+  color: white;
 }
 
-/* FEATURES */
+/* FEATURES SECTION */
 .features {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   padding: 60px;
   flex-wrap: wrap;
 }
 
 .card {
-  background: rgba(255,255,255,0.1);
+  width: 260px;
+  padding: 25px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* PRACTICE AREA */
+.practice-container {
+  padding: 40px;
+  background: white;
+  margin: 40px;
+  border-radius: 16px;
+}
+
+/* LEARN LAYOUT */
+.learn-container {
+  display: flex;
+  height: 100vh;
+  background: #F8FAFC;
+}
+
+.topics {
+  width: 25%;
+  background: #0B1B3A;
+  color: white;
   padding: 20px;
-  width: 250px;
-  border-radius: 10px;
+}
+
+.topics li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.content {
+  width: 75%;
+  padding: 40px;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  opacity: 0.6;
-}
-
-.learn-container {
-  display: flex;
-  height: 100vh;
-}
-
-/* LEFT PANEL */
-.topics {
-  width: 25%;
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-}
-
-.topics ul {
-  list-style: none;
-  padding: 0;
-}
-
-.topics li {
-  padding: 10px;
-  cursor: pointer;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-/* CONTENT */
-.content {
-  width: 75%;
-  padding: 40px;
-}
-
-.content pre {
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
-  border-radius: 10px;
-}.learn-container {
-  display: flex;
-  height: 100vh;
-}
-
-/* LEFT PANEL */
-.topics {
-  width: 25%;
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-}
-
-.topics ul {
-  list-style: none;
-  padding: 0;
-}
-
-.topics li {
-  padding: 10px;
-  cursor: pointer;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-/* CONTENT */
-.content {
-  width: 75%;
-  padding: 40px;
-}
-
-.content pre {
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.practice-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 40px;
-}
-
-/* PROBLEM */
-.problem-box {
-  background: rgba(255,255,255,0.08);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* EDITOR */
-.editor-box textarea {
-  width: 100%;
-  height: 200px;
-  padding: 15px;
-  border-radius: 10px;
-  border: none;
-  font-family: monospace;
-}
-
-/* OUTPUT */
-.output-box {
-  background: rgba(255,255,255,0.08);
-  padding: 20px;
-  border-radius: 10px;
+  color: white;
+  opacity: 0.7;
 }
