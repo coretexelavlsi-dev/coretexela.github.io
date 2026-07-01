@@ -247,3 +247,89 @@ footer {
   border-left: 4px solid #D4AF37;
   border-radius: 8px;
 }
+
+.practice-container {
+  display: flex;
+  height: 100vh;
+  background: #F5F7FB;
+}
+
+/* LEFT PANEL */
+.problem-list {
+  width: 20%;
+  background: #0B1B3A;
+  color: white;
+  padding: 20px;
+}
+
+.problem-list h2 {
+  color: #D4AF37;
+}
+
+.problem-list ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.problem-list li {
+  padding: 10px;
+  margin-bottom: 8px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.problem-list li:hover {
+  background: #D4AF37;
+  color: #0B1B3A;
+}
+
+/* CENTER EDITOR */
+.editor-panel {
+  width: 55%;
+  padding: 30px;
+}
+
+.problem-header h1 {
+  color: #0B1B3A;
+}
+
+.code-editor {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  padding: 15px;
+  font-family: monospace;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+/* BUTTONS */
+.actions {
+  margin-top: 15px;
+}
+
+/* RIGHT OUTPUT */
+.output-panel {
+  width: 25%;
+  background: white;
+  padding: 20px;
+  border-left: 2px solid #eee;
+}
+
+#outputBox {
+  background: #0B1B3A;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 120px;
+}
+
+.hint-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-left: 4px solid #D4AF37;
+  background: #f8fafc;
+}
