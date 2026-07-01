@@ -9,9 +9,10 @@
 
 <body>
 
-<!-- HEADER -->
+<!-- NAVBAR -->
 <header class="navbar">
   <div class="logo">CORETEXELA</div>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="practice.html">Practice</a>
@@ -19,27 +20,64 @@
   </nav>
 </header>
 
-<!-- MAIN LEARN SECTION -->
+<!-- LEARN LAYOUT -->
 <section class="learn-container">
 
-  <!-- TOPIC LIST -->
+  <!-- LEFT SIDEBAR (TOPICS) -->
   <aside class="topics">
-    <h3>Topics</h3>
-    <ul id="topicList"></ul>
-  </aside>
 
-  <!-- CONTENT AREA -->
-  <main class="content">
-
-    <h2 id="topicTitle">Select a Topic</h2>
-
-    <p id="topicDesc">
-      Choose a topic from left panel to start learning.
+    <h2>Learning Path</h2>
+    <p style="opacity:0.7; font-size:12px;">
+      Structured VLSI Engineering Flow
     </p>
 
-    <pre id="topicExample"></pre>
+    <ul id="topicList"></ul>
 
-    <button onclick="nextTopic()">Next Topic</button>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <div class="topic-header">
+
+      <h1 id="topicTitle">Select a Topic</h1>
+
+      <p id="topicDesc">
+        Choose a topic from the left panel to begin structured learning.
+      </p>
+
+    </div>
+
+    <!-- ENGINEERING EXAMPLE BOX -->
+    <div class="code-block">
+
+      <h3>Example Implementation</h3>
+
+      <pre id="topicExample">
+// Verilog / Concept will appear here
+      </pre>
+
+    </div>
+
+    <!-- LEARNING ACTIONS -->
+    <div class="actions">
+
+      <button onclick="nextTopic()" class="primary">
+        Next Topic →
+      </button>
+
+    </div>
+
+    <!-- INTELLIGENCE PANEL -->
+    <div class="recommendation-box">
+
+      <h3>Recommended Next Step</h3>
+
+      <p id="nextSuggestion">
+        Complete current topic to unlock recommendations.
+      </p>
+
+    </div>
 
   </main>
 
