@@ -1,35 +1,16 @@
 const express = require("express");
-const fs = require("fs");
-const { exec } = require("child_process");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+
+const simulateRoute = require("./routes/simulate");
 
 const app = express();
-app.use(express.json());
 
-app.post("/simulate", (req, res) => {
+app.use(cors());
+app.use(bodyParser.json());
 
-  const { code } = req.body;
-
-  fs.writeFileSync("temp/design.v", code);
-
-  const command = `
-    iverilog -o temp/out temp/design.v temp/testbench.v &&
-    vvp temp/out
-  `;
-
-  exec(command, (err, stdout, stderr) => {
-
-    if (err) {
-      return res.json({ success: false, error: stderr });
-    }
-
-    res.json({
-      success: true,
-      output: stdout
-    });
-  });
-
-});
+app.use("/api", simulateRoute);
 
 app.listen(3000, () => {
-  console.log("CORETEXELA Verilog Engine running");
+  console.log("CORETEXELA Verilog Backend Running on port 3000");
 });
