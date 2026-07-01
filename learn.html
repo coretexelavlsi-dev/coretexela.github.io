@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CORETEXELA - Learn</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+  <div class="logo">CORETEXELA</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="practice.html">Practice</a>
+    <a href="project.html">Projects</a>
+  </nav>
+</header>
+
+<!-- MAIN LEARN SECTION -->
+<section class="learn-container">
+
+  <!-- TOPIC LIST -->
+  <aside class="topics">
+    <h3>Topics</h3>
+    <ul id="topicList"></ul>
+  </aside>
+
+  <!-- CONTENT AREA -->
+  <main class="content">
+
+    <h2 id="topicTitle">Select a Topic</h2>
+
+    <p id="topicDesc">
+      Choose a topic from left panel to start learning.
+    </p>
+
+    <pre id="topicExample"></pre>
+
+    <button onclick="nextTopic()">Next Topic</button>
+
+  </main>
+
+</section>
+
+<script src="js/learn.js"></script>
+
+</body>
+</html>
