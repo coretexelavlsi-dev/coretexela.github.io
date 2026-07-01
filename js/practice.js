@@ -39,8 +39,29 @@ function loadProblem(index) {
 
 // RUN (simulation placeholder)
 function runCode() {
-  document.getElementById("outputBox").innerText =
-    "Running simulation... (MVP mode)";
+
+  const code = document.getElementById("codeArea").value;
+
+  fetch("http://localhost:3000/simulate", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ code })
+  })
+  .then(res => res.json())
+  .then(data => {
+
+    if(data.success) {
+      document.getElementById("outputBox").innerText =
+        data.output;
+    } else {
+      document.getElementById("outputBox").innerText =
+        data.error;
+    }
+
+  });
+
 }
 
 // SUBMIT (basic validation engine)
