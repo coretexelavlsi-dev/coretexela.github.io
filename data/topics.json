@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Logic Gates",
+    "desc": "Understanding AND, OR, NOT gates used in digital circuits.",
+    "example": "module and_gate(input a,b, output y);\n assign y = a & b;\nendmodule"
+  },
+  {
+    "id": 2,
+    "title": "Verilog Basics",
+    "desc": "Introduction to Verilog syntax and structure.",
+    "example": "module test;\n initial begin\n $display('Hello CORETEXELA');\n end\nendmodule"
+  },
+  {
+    "id": 3,
+    "title": "Multiplexer",
+    "desc": "Data selection using control signals.",
+    "example": "assign y = sel ? b : a;"
+  }
+]
