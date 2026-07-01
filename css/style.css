@@ -171,3 +171,79 @@ footer {
   font-size: 12px;
   opacity: 0.8;
 }
+
+.learn-container {
+  display: flex;
+  height: 100vh;
+  background: #F5F7FB;
+}
+
+/* LEFT PANEL */
+.topics {
+  width: 25%;
+  background: #0B1B3A;
+  color: white;
+  padding: 20px;
+}
+
+.topics h2 {
+  color: #D4AF37;
+}
+
+.topics ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.topics li {
+  padding: 12px;
+  margin-bottom: 8px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.topics li:hover {
+  background: #D4AF37;
+  color: #0B1B3A;
+}
+
+/* MAIN CONTENT */
+.content {
+  width: 75%;
+  padding: 40px;
+}
+
+.topic-header h1 {
+  font-size: 28px;
+  color: #0B1B3A;
+}
+
+.topic-header p {
+  margin-top: 10px;
+  color: #64748B;
+}
+
+/* CODE BLOCK */
+.code-block {
+  margin-top: 30px;
+  background: #0B1B3A;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* ACTION BUTTON */
+.actions {
+  margin-top: 20px;
+}
+
+/* RECOMMENDATION BOX */
+.recommendation-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-left: 4px solid #D4AF37;
+  border-radius: 8px;
+}
