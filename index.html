@@ -2,428 +2,72 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CORETEXELA - VLSI Learning Platform</title>
 
-<title>CORETEXELA | Master The Technologies Of Tomorrow</title>
+  <link rel="stylesheet" href="css/style.css">
 
-<meta name="description"
-content="CORETEXELA is a technology-driven engineering and innovation ecosystem bridging education, industry, research and future technologies.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<!-- NAVBAR -->
 
-<nav class="navbar">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">CORETEXELA</div>
 
-<div class="container nav-container">
+    <nav>
+      <a href="learn.html">Learn</a>
+      <a href="practice.html">Practice</a>
+      <a href="project.html">Projects</a>
+    </nav>
+  </header>
 
-<div class="logo">
-<img src="assets/logo.png" alt="CORETEXELA Logo">
-<span>CORETEXELA</span>
-</div>
+  <!-- HERO SECTION -->
+  <section class="hero">
 
-<div class="nav-links">
-<a href="index.html">Home</a>
-</div>
+    <h1>Build Semiconductor Engineering Skills</h1>
 
-</div>
+    <p>
+      Learn, Practice, and Build real VLSI systems with structured engineering workflows.
+    </p>
 
-</nav>
-
-<!-- ========================= -->
-<!-- HERO -->
-<!-- ========================= -->
-
-<section class="hero">
-
-    <div class="container">
-
-        <div class="hero-wrapper">
-
-            <!-- LEFT -->
-            <div class="hero-left">
-
-                <div class="badge">
-                    TECHNOLOGY • INNOVATION • FUTURE
-                </div>
-
-                <h1>
-                    MASTER THE <br>
-                    TECHNOLOGIES OF <br>
-                    TOMORROW
-                </h1>
-
-                <p>
-                    Learn semiconductor technologies, build real engineering
-                    skills, explore emerging innovations, and accelerate your
-                    journey from student to future technology leader.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#journey" class="btn btn-primary">
-                        Start Learning
-                    </a>
-
-                    <a href="#domains" class="btn btn-secondary">
-                        Explore Roadmaps
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- RIGHT -->
-            <div class="hero-right">
-
-                <div class="hero-visual">
-
-                    <img
-                        src="assets/images/hero-chip.png"
-                        alt="CORETEXELA Hero Chip"
-                        class="hero-chip">
-
-                </div>
-
-            </div>
-
-        </div>
-
+    <div class="cta">
+      <button onclick="startLearning()">Start Learning</button>
+      <button class="secondary" onclick="explorePlatform()">Explore</button>
     </div>
 
-</section><!-- ========================= -->
-<!-- WHY CORETEXELA -->
-<!-- ========================= -->
+  </section>
 
-<section id="why">
+  <!-- FEATURES -->
+  <section class="features">
 
-<div class="container">
+    <div class="card">
+      <h3>Learn Concepts</h3>
+      <p>Structured VLSI topics from basics to advanced.</p>
+    </div>
 
-<h2>Why CORETEXELA Exists</h2>
+    <div class="card">
+      <h3>Practice Problems</h3>
+      <p>HDL-style coding challenges with instant feedback.</p>
+    </div>
 
-<p>
-Education teaches concepts.
+    <div class="card">
+      <h3>Build Projects</h3>
+      <p>Real engineering system design step-by-step.</p>
+    </div>
 
-Industry demands practical skills.
+  </section>
 
-Research drives innovation.
+  <!-- FOOTER -->
+  <footer>
+    <p>CORETEXELA © 2026 | Engineering Learning System</p>
+  </footer>
 
-CORETEXELA bridges all three through structured learning, hands-on projects, research exploration and community-driven growth.
-</p>
+  <script src="js/main.js"></script>
 
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!-- CORE DOMAINS -->
-<!-- ========================= -->
-
-<section id="domains">
-
-<div class="container">
-
-<h2>Core Domains</h2>
-
-<div class="grid cards-3">
-
-<div class="card">
-<h3>Semiconductors & VLSI</h3>
-<p>The foundation of modern computing and electronics.</p>
-</div>
-
-<div class="card">
-<h3>Embedded Systems</h3>
-<p>Building intelligent systems that power real-world devices.</p>
-</div>
-
-<div class="card">
-<h3>Internet of Things</h3>
-<p>Connecting devices, data and intelligent applications.</p>
-</div>
-
-<div class="card">
-<h3>FPGA Development</h3>
-<p>Programmable hardware for rapid innovation and prototyping.</p>
-</div>
-
-<div class="card">
-<h3>ASIC Design</h3>
-<p>Custom silicon solutions for high-performance applications.</p>
-</div>
-
-<div class="card">
-<h3>AI Hardware</h3>
-<p>Exploring next-generation computing architectures for AI.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!-- LEARNING JOURNEY -->
-<!-- ========================= -->
-
-<section id="journey">
-
-<div class="container">
-
-<h2>Learning Journey</h2>
-
-<p>
-Follow a structured path from fundamentals to industry readiness.
-</p>
-
-<div class="journey-grid">
-
-<div class="journey-step">
-<span>01</span>
-<h3>Fundamentals</h3>
-<p>Build strong engineering foundations.</p>
-</div>
-
-<div class="journey-step">
-<span>02</span>
-<h3>Core Concepts</h3>
-<p>Master technical principles and workflows.</p>
-</div>
-
-<div class="journey-step">
-<span>03</span>
-<h3>Hands-On Practice</h3>
-<p>Apply knowledge through guided exercises.</p>
-</div>
-
-<div class="journey-step">
-<span>04</span>
-<h3>Projects</h3>
-<p>Create practical engineering solutions.</p>
-</div>
-
-<div class="journey-step">
-<span>05</span>
-<h3>Industry Ready</h3>
-<p>Prepare for careers, internships and research.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-<section id="pillars">
-
-<div class="container">
-
-<h2>Engineering Ecosystem</h2>
-
-<p>
-Everything at CORETEXELA is built around five pillars that help learners become innovators.
-</p>
-
-<div class="grid cards-3">
-
-<div class="card">
-<h3>📘 Learn</h3>
-<p>Structured learning paths from fundamentals to advanced topics.</p>
-</div>
-
-<div class="card">
-<h3>🛠 Build</h3>
-<p>Hands-on projects and practical engineering implementation.</p>
-</div>
-
-<div class="card">
-<h3>🔍 Explore</h3>
-<p>Technology insights, trends and industry developments.</p>
-</div>
-
-<div class="card">
-<h3>🧪 Research</h3>
-<p>Future technologies, innovation and engineering research.</p>
-</div>
-
-<div class="card">
-<h3>📈 Grow</h3>
-<p>Career readiness, mentorship and professional development.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!-- RESEARCH & INNOVATION -->
-<!-- ========================= -->
-
-<section id="research" class="research-section">
-
-<div class="container">
-
-<div class="research-content">
-
-<span class="research-tag">
-RESEARCH & INNOVATION
-</span>
-
-<h2>
-Building The Future Of Technology
-</h2>
-
-<p>
-Explore semiconductor research, future materials, AI hardware, advanced computing and emerging technologies shaping tomorrow's world.
-</p>
-
-<div class="research-grid">
-
-<div class="research-card">
-<h3>Future Materials</h3>
-<p>Beyond silicon technologies and next-generation semiconductor materials.</p>
-</div>
-
-<div class="research-card">
-<h3>AI Hardware</h3>
-<p>Specialized architectures powering artificial intelligence systems.</p>
-</div>
-
-<div class="research-card">
-<h3>Advanced Computing</h3>
-<p>Future computing paradigms and high-performance systems.</p>
-</div>
-
-<div class="research-card">
-<h3>Innovation Lab</h3>
-<p>Research ideas, engineering exploration and breakthrough technologies.</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-  <section id="resources">
-
-<div class="container">
-
-<h2>Featured Resources</h2>
-
-<p>
-Explore industry blueprints, learning roadmaps and technology insights.
-</p>
-
-<div class="grid cards-3">
-
-<div class="card">
-<h3>Industry Blueprints</h3>
-<p>Structured guides for semiconductor and engineering careers.</p>
-</div>
-
-<div class="card">
-<h3>Learning Roadmaps</h3>
-<p>Step-by-step pathways from beginner to industry-ready engineer.</p>
-</div>
-
-<div class="card">
-<h3>Technology Insights</h3>
-<p>Latest developments across semiconductors and future technologies.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-  <section id="community">
-
-<div class="container">
-
-<h2>Join The Community</h2>
-
-<p>
-Connect with students, engineers, researchers and innovators.
-</p>
-
-<div class="grid cards-3">
-
-<div class="card">
-<h3>LinkedIn</h3>
-<p>Professional networking and industry updates.</p>
-</div>
-
-<div class="card">
-<h3>Instagram</h3>
-<p>Visual learning content and engineering insights.</p>
-</div>
-
-<div class="card">
-<h3>WhatsApp</h3>
-<p>Collaborate and engage with the growing community.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-  <section class="vision-banner">
-
-<div class="container">
-
-<h2>
-THE FUTURE BELONGS TO THOSE WHO BUILD IT.
-</h2>
-
-</div>
-
-</section>
-
-<footer class="footer">
-
-<div class="container">
-
-<div class="footer-brand">
-
-<h3>CORETEXELA</h3>
-
-<p>
-Ignite Innovation For Future
-</p>
-
-</div>
-
-<div class="footer-links">
-
-<a href="about.html">About</a>
-<a href="learn.html">Learn</a>
-<a href="research.html">Research</a>
-<a href="community.html">Community</a>
-<a href="contact.html">Contact</a>
-
-</div>
-
-<p class="copyright">
-© 2026 CORETEXELA. All Rights Reserved.
-</p>
-
-</div>
-
-</footer>
-  
 </body>
 </html>
